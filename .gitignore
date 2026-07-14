@@ -1,0 +1,7 @@
+.cloude/
+.venv/
+src/.venv/
+src/__pycache__/
+assets/
+__pycache__/
+.env
