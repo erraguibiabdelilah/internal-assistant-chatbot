@@ -2,6 +2,7 @@
 .venv/
 src/.venv/
 src/__pycache__/
-assets/
+assets/*
+!assets/.gitkeep
 __pycache__/
 .env
