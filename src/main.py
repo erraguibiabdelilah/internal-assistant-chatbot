@@ -1,11 +1,11 @@
 from fastapi import FastAPI
 from dotenv import load_dotenv
-from src.routes import base
+from routers import router
 
 load_dotenv(".env")
 
 app = FastAPI()
-app.include_router(base.base_router)
+app.include_router(router.api_router)
 
 
 # @app.get("/api/process")
