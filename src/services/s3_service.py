@@ -51,6 +51,7 @@ class S3Service:
         except ClientError as e:
             raise Exception(f"Document non trouvé: {str(e)}")
     
+
     def download_document(self, key: str, local_path: str) -> str:
         try:
             os.makedirs(os.path.dirname(local_path), exist_ok=True)
@@ -58,6 +59,5 @@ class S3Service:
             return local_path
         except ClientError as e:
             raise Exception(f"Erreur téléchargement: {str(e)}")
-
 
 s3_service = S3Service()
